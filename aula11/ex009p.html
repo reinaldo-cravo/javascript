@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENSO</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font: normal 18px arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classificando moradores</h1>
+   Em que pais voce mora? <input type="text" name="pais" id="ipais" >
+
+   <input type="button" value="Enviar" onclick="calcular()">
+    
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var pais = document.getElementById('ipais').value
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Você mora em ${pais}`
+            if(pais == `Brasil`) {
+                res.innerHTML = `Voce é Brasileiro`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.writeln(`Olá ${nome} seu nome tem ${nome.length} letras.<br/>`)
+
+        document.writeln(`Seu nome em maiusculas é ${nome.toUpperCase()}<br/>`)
+
+        document.write(`Seu nome em minusculos é ${nome.toLowerCase()}`)
+
+        /*
+        
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+        */
+    </script>
+</body>
+</html>
